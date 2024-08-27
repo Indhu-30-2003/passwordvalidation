@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="form_container">
+        <h2>Password Validation</h2>
+        <form class="form">
+            <label for="name">Name :</label>
+            <input type="text" placeholder="Enter your name" id="name"><br>
+            <label for="email">Email :</label>
+            <input type="email" placeholder="Enter your email" id="email"><br>
+            <label for="password">Password :</label>
+            <input type="password" placeholder="Enter password" id="password"> <i class="fa-solid fa-eye" onclick="myFunction()" style="color: #18191b;" ></i><br>
+            <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+            
+            <label for="repassword">Re-type Password :</label>
+            <input type="password" placeholder="ReEnter password" id="repassword" required> <i class="fa-solid fa-eye"  onclick="myFunction2()" style="color: #18191b;"></i><br>
+            <br>
+            <input type="submit" value="Submit" class="submit" id="submit" >
+            <div id="warningmsg"></div>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
