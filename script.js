@@ -57,6 +57,7 @@ password.onfocus = function() {
     
     if(password.value==repassword.value){
       warningmsg.style.color="green"
+      warningmsg.textContent="Password matched"
       alert("Your form is submitted")
       
     }
